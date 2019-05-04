@@ -31,5 +31,10 @@ public class Punt {
 	public void setY(int y) {
 		this.y = y;
 	}
+	
+	public void Suma(Punt p) {
+		x = x + p.getX();
+		y = y + p.getY();
+	}
 
 }

@@ -7,7 +7,8 @@ public class TestPunt {
     @Test
         public void testPuntConstructor() {
             // comprova que el constructor Punt() pugui ser cridat
-            Punt p = new Punt();
+            @SuppressWarnings("unused")
+			Punt p = new Punt();
         }
     
     @Test
@@ -38,6 +39,15 @@ public class TestPunt {
         Punt p = new Punt(3, 4);
         assertEquals(3, p.getX());
         assertEquals(4, p.getY());
+    }
+    
+    @Test
+    public void testSuma() {
+    	Punt p = new Punt(3, 4);
+    	Punt p2 = new Punt(4, 2);
+    	p.Suma(p2);
+    	assertEquals(7, p.getX());
+    	assertEquals(6, p.getY());
     }
 
     public static void main(String args[]) {
