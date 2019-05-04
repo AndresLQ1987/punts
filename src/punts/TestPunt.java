@@ -43,6 +43,7 @@ public class TestPunt {
     
     @Test
     public void testSuma() {
+    	//comprova que retorna la suma dels 2 punts
     	Punt p = new Punt(3, 4);
     	Punt p2 = new Punt(4, 2);
     	p.Suma(p2);
