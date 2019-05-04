@@ -2,39 +2,40 @@ package punts;
 
 public class Punt {
 
-	private int x;
-	private int y;
+	int[] coord;
 
 	public Punt(int x, int y) {
-		this.x = x;
-		this.y = y;
+		coord = new int[2];
+		coord[0] = x;
+		coord[1] = y;
 	}
 
 	public Punt() {
-		x = 0;
-		y = 0;
+		coord = new int[2];
+		coord[0] = 0;
+		coord[1] = 0;
 	}
 
 	public int getX() {
-		return x;
+		return coord[0];
 	}
 
 	public int getY() {
 
-		return y;
+		return coord[1];
 	}
 
 	public void setX(int x) {
-		this.x = x;
+		coord[0] = x;
 	}
 
 	public void setY(int y) {
-		this.y = y;
+		coord[1]= y;
 	}
 	
 	public void Suma(Punt p) {
-		x = x + p.getX();
-		y = y + p.getY();
+		coord[0] += p.getX();
+		coord[1] += p.getY();
 	}
 
 }
