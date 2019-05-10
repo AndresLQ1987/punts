@@ -2,6 +2,16 @@ Ejercicio 4
 descriu quan té sentit fer un cas de test als mètodes get/set i quan no?
 
 Siempre que no cumpla la norma de es demasiado sencillo como para que se rompa.
-Que consiste en que el metodo es tan sencillo que es imposible k se rompa
+Que consiste en que el metodo es tan sencillo que es imposible que se rompa
 por ejemplo cuando tienes una variable x i el metodo solo hace una asignacion
 de el valor que se le pasa a esa x. 
+
+
+Ejercicio 5
+Descriu amb les teves paraules la resposta al FAQ 4.10
+FAQ 4.10: Por Que JUnit solo reporta un fallo por test?
+
+Por que los casos de prueba estan pensados para probar un solo caso de fallo
+de esta manera es mas facil detectar cual es el fallo y donde esta el error.
+Que si tienes un caso de prueba que detecta varios errores por que entonces tienes
+que revisar todos los lugares donde el test mira.
