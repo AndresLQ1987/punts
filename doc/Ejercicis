@@ -1,0 +1,7 @@
+Ejercicio 4
+descriu quan té sentit fer un cas de test als mètodes get/set i quan no?
+
+Siempre que no cumpla la norma de es demasiado sencillo como para que se rompa.
+Que consiste en que el metodo es tan sencillo que es imposible k se rompa
+por ejemplo cuando tienes una variable x i el metodo solo hace una asignacion
+de el valor que se le pasa a esa x. 
