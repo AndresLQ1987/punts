@@ -50,6 +50,24 @@ public class TestPunt {
     	assertEquals(7, p.getX());
     	assertEquals(6, p.getY());
     }
+    
+    @Test(expected = IllegalArgumentException.class)
+    public void testNoNegativeX() {
+    	/*
+    	 * Comprovem que si li pasem un valor negatiu a la X dona un error de
+    	 * IllegalArgumentException
+    	 */
+    	Punt p = new Punt(-2,3);
+    }
+    
+    @Test(expected = IllegalArgumentException.class)
+    public void testNoNegativeY() {
+    	/*
+    	 * Comprovem que si li pasem un valor negatiu a la Y dona un error de
+    	 * IllegalArgumentException
+    	 */
+    	Punt p = new Punt(2,-3);
+    }
 
     public static void main(String args[]) {
         org.junit.runner.JUnitCore.main("TestPunt");
